@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            * {
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+        header {
+            background-color:rgb(255, 0, 255);
+            width:1920px;
+            height:125px;
+            position:absolute;
+            top:0px;
+            left:0px;
+            font-size:100px;
+            text-align:center;  
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        
+            
+        }
+
+        section {
+            background-color:rgb(139, 10, 111);
+            width:1920px;
+            height:585px;
+            position:absolute;
+            top:180px;
+            left:0px;
+        }
+        
+        footer {
+            background-color:rgb(74, 5, 83);
+            width:1920px;
+            height:150px;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            font-size:100px;
+        }
+
+        div#jeden {
+            width:280px;
+            height:280px;
+            position:absolute;
+            top:30px;
+            left:30px;
+            background-color:rgb(116, 86, 126);
+        }
+
+        div#dwa {
+            width:280px;
+            height:280px;
+            position:absolute;
+            top:30px;
+            left:330px;
+            background-color:rgb(116, 86, 126);
+        }
+
+        div#trzy {
+            width:280px;
+            height:280px;
+            position:absolute;
+            top:30px;
+            left:630px;
+            background-color:rgb(116, 86, 126);
+        }
+
+        div#cztery {
+            width:960px;
+            height:530px;
+            position: absolute;
+            top:30px;
+            left:930px;
+            background-color:rgb(116, 86, 126);
+        }
+
+        div#piec {
+            width:880px;
+            height:225px;
+            position: absolute;
+            top:330px;
+            left:30px;
+            background-color:rgb(116, 86, 126);
+            padding-top:5px;
+            
+        }
+
+        html {
+            background-color: black;
+            animation: 5s infinite alternate ease-out breathing-color--dark;
+        }
+
+        @keyframes breathing-color--dark {
+            from
+        {   
+            background-color: hsl(313, 38%, 69%);
+        }
+            to
+        {
+            background-color: hsl(313, 100%, 69%);
+        }
+        }
+
+        header {
+            background-color: black;
+            animation: 5s infinite alternate ease-in breathing-color--dark;
+        }
+
+        @keyframes breathing-color--dark {
+            from
+        {   
+            background-color: hsl(312, 12%, 58%);
+        }
+            to
+        {
+            background-color: hsl(314, 20%, 38%);
+        }
+        }
+
+        section {
+            background-color: black;
+            animation: 5s infinite alternate ease-in breathing-color--dark;
+        }
+
+        @keyframes breathing-color--dark {
+            from
+        {   
+            background-color: hsl(312, 12%, 58%);
+        }
+            to
+        {
+            background-color: hsl(314, 20%, 38%);
+        }
+        }
+
+        footer {
+            background-color: black;
+            animation: 5s infinite alternate ease-in breathing-color--dark;
+        }
+
+        @keyframes breathing-color--dark {
+            from
+        {   
+            background-color: hsl(312, 12%, 58%);
+        }
+            to
+        {
+            background-color: hsl(314, 20%, 38%);
+        }
+        }
+
+        input[type=number] {
+            width: 30px;
+            background-color: rgb(116, 86, 126);
+            border-left:1px solid transparent;
+            border-right:1px solid transparent;
+            border-top:1px solid transparent;
+            border-bottom:2px solid rgb(154, 58, 167);
+            color: black;
+        }
+
+        input[type=submit] {
+            width: 400px;
+            height:150px;
+            background-color:rgb(137, 102, 170);     
+            border:1px solid transparent;            
+            font-size:50px;              
+        }
+
+        input[type=submit]:hover {
+            width: 400px;
+            height:150px;
+            background-color: rgb(195, 86, 186);
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            border:1px solid transparent;
+            cursor:pointer;
+        }
+        
+        div#jeden:hover {
+            background-color: rgb(195, 86, 186);
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        div#dwa:hover {
+            background-color: rgb(195, 86, 186);
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        div#trzy:hover {
+            background-color: rgb(195, 86, 186);
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        
+        </style>
+        <title>Sklep</title>      
+    </head>
+    <body> 
+            <header>
+                SKLEP Z MASECZKAMI
+            </header>
+            <section>
+                <div id="jeden"><center><img src="maska1.png" width="250px" onmouseover="funkcjaA()" onmouseout="funkcjaOUT()"><br>200PLN</center></div>
+                <div id="dwa"><center><img src="maska2.png" width="250px" onmouseover="funkcjaB()" onmouseout="funkcjaOUT()"><br>250PLN</center></div>
+                <div id="trzy"><center><img src="maska3.png" width="250px" onmouseover="funkcjaC()" onmouseout="funkcjaOUT()"><br>300PLN</center></div>
+                <form action="sklepmaseczki.php" method="POST">
+                <div id="cztery"><center><br><font size="15px">ZAMÓWIENIE</font><br><br><br><br><br>
+                    <font size="5px">Maska Minecraft ilość:<input type="number" name="m1" placeholder="0" min="1" max="10"> szt.<br><br>
+                    Maska Pieska ilość:<input type="number" name="m2" placeholder="0" min="1" max="10"> szt.<br><br>
+                    Maska Shreka ilość:<input type="number" name="m3" placeholder="0" min="1" max="10"> szt.<br><br><br></font>
+                    <input type="submit" value="Zamawiam" id="zamow">      
+                </div>
+                </form>
+                <div id="piec"></div>
+            </section>
+            <footer>
+                <marquee width="100%" direction="right" height="150px" scrollamount="15"><img src="smok.gif" width="600px"></marquee>
+            </footer>
+            <script>
+                function funkcjaA() {
+                    document.getElementById("piec").innerHTML="<center><font size='8px'>Maska dla prawdziwych fanów Minecrafta. Musisz mieć mniej niż 11 lat aby ją nosić. Każdy w postawówce ci jej zazdrości.</font></center>";
+                };
+
+                function funkcjaB() {
+                    document.getElementById("piec").innerHTML="<center><font size='8px'>Słodka maska pieska. Każdy cie głaszcze i daje ci kość. Aportujesz za patykami i szczekasz na wszystko. Boisz się większych psów.</font></center>";
+                };
+
+                function funkcjaC() {
+                    document.getElementById("piec").innerHTML="<center><font size='8px'>Straszna maska ogra Shreka. Wszyscy uciekają przed tobą jak ją nosisz i poluje na ciebie Lord Farquaad. Masz uczucia i warstwy, zupełnie jak ceubla.</font></center>";
+                };
+
+                function funkcjaOUT() {
+                    document.getElementById("piec").innerHTML="";
+                };           
+            </script>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
+
